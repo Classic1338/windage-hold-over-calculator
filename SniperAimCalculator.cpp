@@ -7,11 +7,11 @@ int main()
     float Range1 = 0.f;
     float Range2 = 0.f;
     int BC = 0;
-    float Wind = 0.f;
+    float Wind = 1.f;
 
     printf("credits: \n");
     printf("Classic1337 \n");
-    printf("Gh0st \n");
+    printf("GrinchWithAGun \n");
     printf("------------ \n");
 
     printf("This is a program that uses range, ballistics coefficient \nand windspeed (m/s) to calculate windage hold-over \n");
@@ -25,6 +25,9 @@ int main()
 
     printf("input Wind:");
     std::cin >> Wind;
+
+    if (Wind == 0)
+        Wind = 1;
 
     Range2 = Range1 / 100;
 
